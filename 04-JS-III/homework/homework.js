@@ -197,7 +197,21 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  let contador=0
+  let array=[]
+  while(contador<10){
+    if(contador==numero){
+     break
+   }
+   numero=numero+2
+    contador++
+   array.push(numero)
+} if (contador==numero){
+  return "Se interrumpió la ejecución"
+  }return array
 }
+
+
 
 
 function continueStatement(numero) {
@@ -207,6 +221,17 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  let contador=0
+  let array=[]
+  while(contador<10){
+    contador=contador+1
+    if(contador===5){
+      continue
+    }
+    numero=numero+2
+    array.push(numero)
+  }
+  return array
 }
 
 
